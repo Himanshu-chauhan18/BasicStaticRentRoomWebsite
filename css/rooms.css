@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+.navbar > a > .img0{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.language{
+    color: white;
+    margin-left: 1100px;
+    cursor: pointer;
+}
+
+
+.navbar .language > i{
+    margin-right: 10px;
+    background: none;
+}
+    
+
+  /* used for set background for navbar */
+ nav::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     z-index: -1;
+     opacity: 0.89;
+ }   
+                 /* use to solve float problem */
+nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.navbar .btn1 a{
+    text-decoration: none;
+    color: red;
+}
+
+.btn1:hover > a{
+    color: white;
+}
+
+.navbar .btn1{
+margin-right: 10px;
+width: 100px;
+}
+
+
+.btn1{
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    color:red;
+    background-color:white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+   
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.1s all;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.btn1:hover{
+    background: hsla(341, 94%, 49%, 1);
+
+    background: linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F40752", endColorstr="#F9AB8F", GradientType=1 );
+    box-shadow: 0px 2px 10px 5px #97b1bf;
+    color:white;
+}
+
+.btn1:focus{
+    outline:none
+}
+
+                                        /* rooms */
+.media{
+  border-bottom: 1px solid gray;
+    position: relative;
+    left: 350px;
+    margin-left: 30px;
+    margin-right: 400px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.media .carousel {
+    width: 400px; 
+    height: 280px;
+}
+
+.media .carousel .carousel-inner .carousel-item img{
+     width: 400px; 
+     height: 280px;
+}
+
+.media .media-body{
+    padding: 30px;
+   
+}
+
+
+.media .media-body p{
+    font-weight: 400;
+}
+
+.media .media-body i{
+    color: red;
+
+}
+
+.media .media-body h3{
+    display: inline-block;
+color: red;
+
+}
+
+
+.media .media-body small s{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #97b1bf;
+}
+
+.media .media-body small{
+    font-size: 20px;
+    color: orange;
+}
+
+.media .media-body .small-2{
+    display: block;
+    color: #97b1bf;
+    font-size: 15px;
+}
+
+.media .media-body .handle1{
+    position: relative;
+ display: inline-block;
+}
+
+
+.media .media-body .handle0 button{
+  position: relative;
+  left: 300px;
+  top: 60px;
+}
+
+.media .media-body .handle0 button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.media .media-body .btn-1{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.media .media-body .btn-2{
+    background-color: rgb(85, 252, 85);
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.media .media-body  .para{
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 9px;
+}
+               
+               /* filters */
+
+.filter{
+   border-right: 1px solid gray;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    width: 25%;
+}
+
+
+.columns {
+    float: left;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+input[type="checkbox"]{
+    margin-right: 20px;
+}
+
+.filter .columns .price li{
+    text-align: center;
+    text-align: justify;
+}
+  
